@@ -29,7 +29,7 @@ func main() {
 	http.HandleFunc("/write", writeHandler)
 
 	fmt.Println("Launch server...")
-	if err := http.ListenAndServe(":3000", nil); err != nil {
+	if err := http.ListenAndServe(":8080", nil); err != nil {
 		fmt.Printf("Failed to launch server: %v", err)
 	}
 }
